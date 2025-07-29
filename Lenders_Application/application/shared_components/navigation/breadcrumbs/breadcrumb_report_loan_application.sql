@@ -1,0 +1,34 @@
+prompt --application/shared_components/navigation/breadcrumbs/breadcrumb_report_loan_application
+begin
+--   Manifest
+--     MENU: Breadcrumb report Loan Application
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.0'
+,p_default_workspace_id=>3780766536418114
+,p_default_application_id=>2000008
+,p_default_id_offset=>0
+,p_default_owner=>'XXSBS'
+);
+wwv_flow_imp_shared.create_menu(
+ p_id=>wwv_flow_imp.id(80638507558411068)
+,p_name=>'Breadcrumb report Loan Application'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(80638709486413601)
+,p_short_name=>'Report'
+,p_long_name=>'Report'
+,p_link=>'f?p=&APP_ID.:15:&SESSION.::&DEBUG.:::'
+,p_page_id=>15
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(80638989287419033)
+,p_parent_id=>wwv_flow_imp.id(80638709486413601)
+,p_short_name=>'Loan Application Report'
+,p_link=>'f?p=&APP_ID.:21:&SESSION.::&DEBUG.:::'
+,p_page_id=>21
+);
+wwv_flow_imp.component_end;
+end;
+/
