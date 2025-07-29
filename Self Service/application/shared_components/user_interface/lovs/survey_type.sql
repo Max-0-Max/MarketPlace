@@ -1,0 +1,35 @@
+prompt --application/shared_components/user_interface/lovs/survey_type
+begin
+--   Manifest
+--     SURVEY_TYPE
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.0'
+,p_default_workspace_id=>3780766536418114
+,p_default_application_id=>2000004
+,p_default_id_offset=>0
+,p_default_owner=>'XXSBS'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(66416068757051833)
+,p_lov_name=>'SURVEY_TYPE'
+,p_lov_query=>'.'||wwv_flow_imp.id(66416068757051833)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>1
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(66416373105051833)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'Self Selected'
+,p_lov_return_value=>'SELF-SELECT'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(66416726265051833)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'Random Sample'
+,p_lov_return_value=>'RANDOM-SAMPLE'
+);
+wwv_flow_imp.component_end;
+end;
+/
