@@ -1,0 +1,83 @@
+prompt --application/shared_components/user_interface/lovs/p32_report_row_per_page
+begin
+--   Manifest
+--     P32_Report Row Per Page
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.0'
+,p_default_workspace_id=>3780766536418114
+,p_default_application_id=>2000007
+,p_default_id_offset=>0
+,p_default_owner=>'XXSBS'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(4683749246821154)
+,p_lov_name=>'P32_Report Row Per Page'
+,p_lov_query=>'.'||wwv_flow_imp.id(4683749246821154)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>1
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4684133892821154)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'10'
+,p_lov_return_value=>'10'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4684560537821155)
+,p_lov_disp_sequence=>20
+,p_lov_disp_value=>'15'
+,p_lov_return_value=>'15'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4684946843821155)
+,p_lov_disp_sequence=>30
+,p_lov_disp_value=>'20'
+,p_lov_return_value=>'20'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4685312222821155)
+,p_lov_disp_sequence=>40
+,p_lov_disp_value=>'30'
+,p_lov_return_value=>'30'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4685767023821155)
+,p_lov_disp_sequence=>50
+,p_lov_disp_value=>'50'
+,p_lov_return_value=>'50'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4686191080821156)
+,p_lov_disp_sequence=>60
+,p_lov_disp_value=>'100'
+,p_lov_return_value=>'100'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4686546473821156)
+,p_lov_disp_sequence=>70
+,p_lov_disp_value=>'200'
+,p_lov_return_value=>'200'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4686917704821156)
+,p_lov_disp_sequence=>80
+,p_lov_disp_value=>'500'
+,p_lov_return_value=>'500'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4687310325821157)
+,p_lov_disp_sequence=>90
+,p_lov_disp_value=>'1000'
+,p_lov_return_value=>'1000'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(4687778942821157)
+,p_lov_disp_sequence=>100
+,p_lov_disp_value=>'5000'
+,p_lov_return_value=>'5000'
+);
+wwv_flow_imp.component_end;
+end;
+/
